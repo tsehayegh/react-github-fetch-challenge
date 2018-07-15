@@ -11,7 +11,6 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-    console.log(action);
     if (action.type === FETCH_REPOS_REQUEST) {
         return Object.assign({}, state, {
             loading: true,
